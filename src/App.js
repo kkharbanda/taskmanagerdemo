@@ -26,7 +26,8 @@ function App() {
         } else {
             setTasks(getTasks);
         }
-    }, [])
+        // eslint-disable-next-line
+    }, []) 
     // Add Task
     const addTask = (task) => {
         const id = uuidv4();
